@@ -111,7 +111,7 @@ var Systems = new Class({
          * [description]
          *
          * @name Phaser.Scenes.Systems#plugins
-         * @type {Phaser.Plugins.PluginManager}
+         * @type {Phaser.Boot.PluginManager}
          * @since 3.0.0
          */
         this.plugins;
@@ -370,7 +370,7 @@ var Systems = new Class({
 
     /**
      * Send this Scene to sleep.
-     * 
+     *
      * A sleeping Scene doesn't run it's update step or render anything, but it also isn't destroyed,
      * or have any of its systems or children removed, meaning it can be re-activated at any point.
      *

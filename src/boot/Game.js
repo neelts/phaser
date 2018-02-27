@@ -50,7 +50,7 @@ var Game = new Class({
     {
         /**
          * The parsed Game Configuration object.
-         * 
+         *
          * The values stored within this object are read-only and should not be changed at run-time.
          *
          * @name Phaser.Game#config
@@ -118,7 +118,7 @@ var Game = new Class({
 
         /**
          * An instance of the Animation Manager.
-         * 
+         *
          * The Animation Manager is a global system responsible for managing all animations used within your game.
          *
          * @name Phaser.Game#anims
@@ -129,7 +129,7 @@ var Game = new Class({
 
         /**
          * An instance of the Texture Manager.
-         * 
+         *
          * The Texture Manager is a global system responsible for managing all textures being used by your game.
          *
          * @name Phaser.Game#textures
@@ -140,7 +140,7 @@ var Game = new Class({
 
         /**
          * An instance of the Cache Manager.
-         * 
+         *
          * The Cache Manager is a global system responsible for caching, accessing and releasing external game assets.
          *
          * @name Phaser.Game#cache
@@ -160,7 +160,7 @@ var Game = new Class({
 
         /**
          * An instance of the Input Manager.
-         * 
+         *
          * The Input Manager is a global system responsible for the capture of browser-level input events.
          *
          * @name Phaser.Game#input
@@ -171,7 +171,7 @@ var Game = new Class({
 
         /**
          * An instance of the Scene Manager.
-         * 
+         *
          * The Scene Manager is a global system responsible for creating, modifying and updating the Scenes in your game.
          *
          * @name Phaser.Game#scene
@@ -198,7 +198,7 @@ var Game = new Class({
          * The Sound Manager is a global system responsible for the playback and updating of all audio in your game.
          *
          * @name Phaser.Game#sound
-         * @type {Phaser.BaseSoundManager}
+         * @type {Phaser.Sound.BaseSoundManager}
          * @since 3.0.0
          */
         this.sound = SoundManagerCreator.create(this);

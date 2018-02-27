@@ -80,7 +80,7 @@ var Path = new Class({
         /**
          * [description]
          *
-         * @name {Phaser.MathPhaser.Curves.Path#startPoint
+         * @name Phaser.MathPhaser.Curves.Path#startPoint
          * @type {Phaser.Math.Vector2}
          * @since 3.0.0
          */
@@ -89,7 +89,7 @@ var Path = new Class({
         /**
          * [description]
          *
-         * @name {Phaser.MathPhaser.Curves.Path#_tmpVec2A
+         * @name Phaser.MathPhaser.Curves.Path#_tmpVec2A
          * @type {Phaser.Math.Vector2}
          * @private
          * @since 3.0.0
@@ -99,7 +99,7 @@ var Path = new Class({
         /**
          * [description]
          *
-         * @name {Phaser.MathPhaser.Curves.Path#_tmpVec2B
+         * @name Phaser.MathPhaser.Curves.Path#_tmpVec2B
          * @type {Phaser.Math.Vector2}
          * @private
          * @since 3.0.0
@@ -740,7 +740,7 @@ var Path = new Class({
  *
  * @param {number} x - The horizontal position of this Path.
  * @param {number} y - The vertical position of this Path.
- * 
+ *
  * @return {Phaser.Curves.Path} The Path Object that was created.
  */
 GameObjectFactory.register('path', function (x, y)
@@ -749,9 +749,9 @@ GameObjectFactory.register('path', function (x, y)
 });
 
 //  When registering a factory function 'this' refers to the GameObjectFactory context.
-//  
+//
 //  There are several properties available to use:
-//  
+//
 //  this.scene - a reference to the Scene that owns the GameObjectFactory
 //  this.displayList - a reference to the Display List the Scene owns
 //  this.updateList - a reference to the Update List the Scene owns

@@ -52,7 +52,7 @@ module.exports = Common;
                 }
             }
         }
-        
+
         return obj;
     };
 
@@ -92,7 +92,7 @@ module.exports = Common;
      */
     Common.values = function(obj) {
         var values = [];
-        
+
         if (Object.keys) {
             var keys = Object.keys(obj);
             for (var i = 0; i < keys.length; i++) {
@@ -100,7 +100,7 @@ module.exports = Common;
             }
             return values;
         }
-        
+
         // avoid hasOwnProperty for performance
         for (var key in obj)
             values.push(obj[key]);
@@ -219,7 +219,7 @@ module.exports = Common;
     Common.isString = function(obj) {
         return Object.prototype.toString.call(obj) === '[object String]';
     };
-    
+
     /**
      * Returns the given value clamped between a minimum and maximum value.
      * @method clamp
@@ -235,7 +235,7 @@ module.exports = Common;
             return max;
         return value;
     };
-    
+
     /**
      * Returns the sign of the given value.
      * @method sign
@@ -245,7 +245,7 @@ module.exports = Common;
     Common.sign = function(value) {
         return value < 0 ? -1 : 1;
     };
-    
+
     /**
      * Returns the current timestamp since the time origin (e.g. from page load).
      * The result will be high-resolution including decimal places if available.
@@ -263,7 +263,7 @@ module.exports = Common;
 
         return (new Date()) - Common._nowStartTime;
     };
-    
+
     /**
      * Returns a random value between a minimum and a maximum value inclusive.
      * The function uses a seeded random generator.
@@ -304,7 +304,7 @@ module.exports = Common;
 
     /**
      * The console logging level to use, where each level includes all levels above and excludes the levels below.
-     * The default level is 'debug' which shows all console messages.  
+     * The default level is 'debug' which shows all console messages.
      *
      * Possible level values are:
      * - 0 = None
@@ -313,7 +313,7 @@ module.exports = Common;
      * - 3 = Warn
      * - 4 = Error
      * @property Common.logLevel
-     * @type {Number}
+     * @type {number}
      * @default 1
      */
     Common.logLevel = 1;

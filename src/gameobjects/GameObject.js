@@ -139,7 +139,7 @@ var GameObject = new Class({
          * If this Game Object is enabled for physics then this property will contain a reference to a Physics Body.
          *
          * @name Phaser.GameObjects.GameObject#body
-         * @type {?Phaser.Physics.Body}
+         * @type {?Phaser.Physics.Arcade.Body}
          * @default null
          * @since 3.0.0
          */
@@ -157,7 +157,7 @@ var GameObject = new Class({
      * @since 3.0.0
      *
      * @param {boolean} value - True if this Game Object should be set as active, false if not.
-     * 
+     *
      * @return {Phaser.GameObjects.GameObject} This GameObject.
      */
     setActive: function (value)
@@ -175,7 +175,7 @@ var GameObject = new Class({
      * @since 3.0.0
      *
      * @param {string} value - The name to be given to this Game Object.
-     * 
+     *
      * @return {Phaser.GameObjects.GameObject} This GameObject.
      */
     setName: function (value)
@@ -212,7 +212,7 @@ var GameObject = new Class({
      *
      * @param {string} key - The key of the property to be stored.
      * @param {any} value - The value to store with the key. Can be a string, number, array or object.
-     * 
+     *
      * @return {Phaser.GameObjects.GameObject} This GameObject.
      */
     setData: function (key, value)
@@ -234,7 +234,7 @@ var GameObject = new Class({
      * @since 3.0.0
      *
      * @param {string} key - The key of the property to be retrieved.
-     * 
+     *
      * @return {any} The data, if present in the Data Store.
      */
     getData: function (key)
@@ -255,7 +255,7 @@ var GameObject = new Class({
      *
      * @param {any} [shape] - A geometric shape that defines the hit area for the Game Object. If not specified a Rectangle will be used.
      * @param {function} [callback] - A callback to be invoked when the Game Object is interacted with.
-     * 
+     *
      * @return {Phaser.GameObjects.GameObject} This GameObject.
      */
     setInteractive: function (shape, callback)
@@ -304,13 +304,13 @@ var GameObject = new Class({
     /**
      * Destroys this Game Object removing it from the Display List and Update List and
      * severing all ties to parent resources.
-     * 
+     *
      * Also removes itself from the Input Manager and Physics Manager if previously enabled.
-     * 
+     *
      * Use this to remove a Game Object from your game if you don't ever plan to use it again.
      * As long as no reference to it exists within your own code it should become free for
      * garbage collection by the browser.
-     * 
+     *
      * If you just want to temporarily disable an object then look at using the
      * Game Object Pool instead of destroying it, as destroyed objects cannot be resurrected.
      *

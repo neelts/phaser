@@ -6,6 +6,19 @@
 
 //  Phaser.Input.InteractiveObject
 
+/**
+ * @classdesc
+ * [description]
+ *
+ * @class InteractiveObject
+ * @memberOf Phaser.Input
+ * @constructor
+ * @since 3.0.0
+ *
+ * @param {Phaser.Game} gameObject - [description]
+ * @param {object} hitArea - [description]
+ * @param {function} hitAreaCallback - [description]
+ */
 var InteractiveObject = function (gameObject, hitArea, hitAreaCallback)
 {
     return {
